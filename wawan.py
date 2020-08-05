@@ -1,13 +1,12 @@
 from fpdf import FPDF
 import os
-pdf = FPDF()
-pdf.add_page()
-pdf.set_font("Arial",size=20)
-# Settingan font dan size disini
 
 cond = True
 def main():
-    global cond
+    pdf = FPDF()
+    pdf.add_page()
+    pdf.set_font("Arial",size=20)
+    # Settingan font dan size disini
     print("""
     ##########################
     ### Ez Data Wawancara  ###
