@@ -22,11 +22,11 @@ def main():
     Fi      = str(input("First Impression  : "))
     # Input datanya
 
-    pdf.cell(200,10,txt = "Nama : %s" %Nama,ln=1)
-    pdf.cell(200,10,txt = "Nim : %d" %Nim,ln=2)
-    pdf.cell(200,10,txt = "Jurusan : %s" %Jurusan,ln=3)
-    pdf.cell(200,10,txt = "Keunikan : %s" %Unik,ln=4)
-    pdf.cell(200,10,txt = "First Impression : %s" %Fi,ln=5)
+    pdf.multi_cell(200,10,txt = "Nama : %s" %Nama)
+    pdf.multi_cell(200,10,txt = "Nim : %d" %Nim)
+    pdf.multi_cell(200,10,txt = "Jurusan : %s" %Jurusan)
+    pdf.multi_cell(200,10,txt = "Keunikan : %s" %Unik)
+    pdf.multi_cell(200,10,txt = "First Impression : %s" %Fi)
     # Prosesnya
 
     out = str(NimAnda)+"_"+str(Nim)+".pdf"
