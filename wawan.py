@@ -34,7 +34,7 @@ def main():
     print("Proses telah berhasil ! ")
     print("Apakah anda mau mengulanginya lagi?")
     opt = str(input("Yes/Apapun : "))
-    if opt.upper == "YES":
+    if opt.upper() == "YES":
         True
     else:
         False
